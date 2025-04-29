@@ -1,5 +1,6 @@
 
 # تصنيفات مميزة (بروتال)
+## دليل الاستخدام
  
 ![img](/img/theme-components/categories.png)
 
