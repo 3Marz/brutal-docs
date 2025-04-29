@@ -11,12 +11,12 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero', styles.heroBanner)}>
+    <header style={{marginTop: "auto", marginBottom: "auto"}} className={clsx(styles.heroBanner)}>
       <div className="container">
 		<div style={{display: "flex", justifyContent: "center", alignItems: "center", width: "100%"}}>
 			<img style={{
 				width: 300,
-			}} src="/img/favicon-1.png" />
+			}} src={require("@site/static/img/favicon-1.png").default} />
 		</div>
 		<p className="hero__subtitle">
 			{siteConfig.tagline}
@@ -40,9 +40,6 @@ export default function Home(): ReactNode {
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
     </Layout>
   );
 }
